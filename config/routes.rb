@@ -19,6 +19,8 @@ Rails.application.routes.draw do
 
   get '/libraries/new', to: 'libraries#new', as: 'new_library'
 
-  post '/libraries', to: 'Libraries#create'
+  post '/libraries', to: 'libraries#create'
+
+  get 'libraries/:id', to: 'libraries#show', as: 'library'
 
 end
